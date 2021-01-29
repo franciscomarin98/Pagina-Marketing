@@ -51,6 +51,9 @@
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#store">Download</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#footer">Contáctanos</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -272,8 +275,66 @@
 
 <section id="footer">
     <div class="container">
+
         <div class="row">
-            <div class="col-12 text-center footer-content">
+            <div class="col-md-12 mt-5">
+                <div class="section-title text-center">
+                    <h1>CONTACTO</h1>
+                    <p class="mt-4 mb-4">Déjanos tu comentario o consulta a través de los siguientes medios, estamos atentos a siempre responder las dudas que tengas sobre nuestro servicio.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 contact-right">
+                <h2>Contáctanos!!</h2>
+                <p class="r-text">Puedes acercarte a las oficinas o llamar desde las 7 AM hasta las 7 PM. </p>
+                <div class="connn-right xs-mb-30">
+                    <p><b><i class="la la-home"></i></b> Chone, Calle Atahualpa y Sucre Nº 530</p>
+                    <p><b><i class="la la-phone"></i></b> +593-4569-87 , + 09-8000-200</p>
+                    <p><b><i class="la la-envelope"></i></b> SafeFood@safefood.io</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 contact-left">
+                <h2>No dudes en escribirnos</h2>
+                <form id="contact-form" method="POST" name="contact-form">
+                    <div class="messages"></div>
+                    <!--you can change the message in contact.php file -->
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input class="form-control" data-error="Fullname is required." id="form_name" name="name" placeholder="Escriba sus nombres completos *" required="required" type="text">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input class="form-control" data-error="Valid email is required." id="form_email" name="email" placeholder="Escriba su email personal*" required="required" type="email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" data-error="Leave a message for me" id="form_message" name="message" placeholder="Escriba su mensaje *" required="required" rows="4"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-right">
+                                <button type="button" class="btn btn-warning btn-send custom-button-4 btn-submit" id="btn">Enviar mensaje</button>
+                            </div>
+                        </div>
+                    </div>
+                </form><!-- contact form ends-->
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mb-5">
                 <ul class="footer-icon">
                     <li class="footer_list"><a href="#"><i class="lab la-facebook-f"></i></a></li>
                     <li class="footer_list"><a href="#"><i class="lab la-twitter"></i></a></li>
@@ -286,7 +347,6 @@
         </div>
     </div>
 </section>
-
 
 <!-- JavaScript -->
 <script src="/js/bundle.min.js"></script>
