@@ -234,7 +234,7 @@ header .navbar-light-vision{
 .bg-header{
     background-image: -o-linear-gradient( 315deg, rgb(244, 68, 106) 0%, rgb(244, 68, 106) 100%);
     background-image: linear-gradient( 135deg, rgb(110, 63, 161) 0%, rgb(244, 68, 106) 100%);
-    height: 111vh;
+    height: 100vh;
     margin-bottom: 195px;
 }
 .bg-header .header-text{
@@ -675,9 +675,9 @@ ul.footer-icon li i.la-instagram:hover{
 }
 
 .single-video a {
-    width: 60px;
-    height: 60px;
-    background: white;
+    width: 120px;
+    height: 120px;
+    background: #55ACEE !important;
     display: inline-block;
     border-radius: 50%;
 	color: #000;
@@ -685,8 +685,9 @@ ul.footer-icon li i.la-instagram:hover{
 }
 
 .single-video a i {
-    font-size: 30px;
-    padding: 15px 0px;
+    font-size: 50px;
+    padding-top: 35px;
 }
 
 /*------ story area ends -------*/
+
