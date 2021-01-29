@@ -19,6 +19,13 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="/css/style.css">
 
+
+    
+    <!-- mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+
+
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.2.1/line-awesome/css/line-awesome.min.css' integrity='sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==' crossorigin='anonymous'/>
 <header>
     <!--    NAVBAR FOR LARGE SCREEN-->
@@ -50,6 +57,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#store">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#ubicacion">Ubicación</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#footer">Contáctanos</a>
@@ -273,6 +283,24 @@
     </div>
 </section>
 
+
+
+
+<section id="ubicacion">
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <div class="section-title text-center">
+                    <h1>Encuéntranos</h1>
+                    <p class="mt-4 mb-4 sub-heading">Contamos con oficinas físicas para atenión al cliente personalizada en la ciudad de Chone.</p>
+                </div>
+            </div>
+        </div>    </div>
+    <div id='map' name="map" style='width: 100%; height: 306px;'></div>
+</section>
+
+
+
 <section id="footer">
     <div class="container">
 
@@ -280,23 +308,23 @@
             <div class="col-md-12 mt-5">
                 <div class="section-title text-center">
                     <h1>CONTACTO</h1>
-                    <p class="mt-4 mb-4">Déjanos tu comentario o consulta a través de los siguientes medios, estamos atentos a siempre responder las dudas que tengas sobre nuestro servicio.</p>
+                    <p class="mt-4 mb-4 sub-heading">Déjanos tu comentario o consulta a través de los siguientes medios, estamos atentos a siempre responder las dudas que tengas sobre nuestro servicio.</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-6 col-md-6 contact-right">
-                <h2>Contáctanos!!</h2>
+                <h2 class="text-center">Contáctanos!!</h2>
                 <p class="r-text">Puedes acercarte a las oficinas o llamar desde las 7 AM hasta las 7 PM. </p>
                 <div class="connn-right xs-mb-30">
-                    <p><b><i class="la la-home"></i></b> Chone, Calle Atahualpa y Sucre Nº 530</p>
-                    <p><b><i class="la la-phone"></i></b> +593-4569-87 , + 09-8000-200</p>
-                    <p><b><i class="la la-envelope"></i></b> SafeFood@safefood.io</p>
+                    <p class="sub-heading"><b><i class="la la-home"></i></b> Chone, Calle Atahualpa y Washington Nº 530</p>
+                    <p class="sub-heading"><b><i class="la la-phone"></i></b> +593-4569-87 , + 09-8000-200</p>
+                    <p class="sub-heading"><b><i class="la la-envelope"></i></b> SafeFood@safefood.io</p>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-6 contact-left">
-                <h2>No dudes en escribirnos</h2>
+                <h2 class="text-center">No dudes en escribirnos</h2>
                 <form id="contact-form" method="POST" name="contact-form">
                     <div class="messages"></div>
                     <!--you can change the message in contact.php file -->
@@ -352,5 +380,6 @@
 <script src="/js/bundle.min.js"></script>
 <script src="/js/owl.carousel.min.js"></script>
 <script src="/js/script.js"></script>
+<script src="/js/mapbox.js"></script>
 </body>
 </html>
