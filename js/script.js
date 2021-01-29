@@ -55,4 +55,8 @@ jQuery(function ($) {
         }, 1200);
     });
 
+    $('.video-play').magnificPopup({
+        type: 'video',
+    });
+
 });
